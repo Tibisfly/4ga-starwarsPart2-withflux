@@ -14,6 +14,7 @@ import Home from "./pages/home.js"
 import About from "./pages/about.js"
 import Contact from "./pages/contact.js"
 import User from "./pages/user.js"
+import DetailEntity from "./components/detailEntity.js"
 
 export default injectContext(function(props) {
     return (
@@ -34,12 +35,15 @@ export default injectContext(function(props) {
                         <Contact />
                     </Route>
 
-                    <Route path="/users/:id">
-                        <User />
+                    <Route path="/character/:id">
+                        <DetailEntity />
+                    </Route>
+
+                    <Route path="/planets/:id">
+                        <DetailEntity />
                     </Route>
                 </Switch>
             </div>
-
             <Footer />
         </Router>
     )

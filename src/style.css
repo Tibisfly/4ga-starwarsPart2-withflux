@@ -1,1 +1,37 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body{
+    background-color: #1a1918;
+}
+.navbar{
+    background-color: black;
+}
+.firstPage{
+    background-color: #1a1918;
+}
+.card{
+    /* width: 18 rem; */
+    background-color:#363636;
+    color: #d9d4d4;
+    max-width: 540px; 
+    min-width: 500px;
+}
+.cardScrollable{
+    overflow-x: scroll;
+    scrollbar-color: #eb1313;
+    /* que pasa aquí */
+}
+.imgCardContainer{
+    max-height: 281px;
+    overflow: hidden;
+}
+.jumbotron {
+  background-image: url("https://cdn.wallpapersafari.com/10/72/Tv70DG.jpg");
+  background-size: cover;
+  color: whitesmoke;
+}
+footer{
+    color: whitesmoke;
+}
+.corazon{
+    color: #ffc107;
+}

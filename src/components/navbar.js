@@ -1,16 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function(props) {
+export default function Navbar(props) {
     return (
-        <nav className="navbar">
-            <div className="container">
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/contact">Contact</Link>
-                <Link to="/users/1">Usuario 1</Link>
-                <Link to="/users/2">Usuario 2</Link>
-            </div>
-        </nav>
+        <div className="container-fluid">
+            <nav className="navbar navbar-light">
+            <Link className="navbar-brand" to="/">
+                <img src="https://clipart.info/images/ccovers/1513370389Star%20Wars%20Logo%20transparent%20PNG.png" width="110" height="80" alt="la mejor pagina de starwars"/>
+            </Link>
+            </nav>
+        </div>
+       
     )
 }
