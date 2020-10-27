@@ -17,7 +17,6 @@ body{
 }
 .cardScrollable{
     overflow-x: scroll;
-    scrollbar-color: #eb1313;
     /* que pasa aquí */
 }
 .imgCardContainer{
@@ -34,4 +33,5 @@ footer{
 }
 .corazon{
     color: #ffc107;
+    font-size: 15px;
 }

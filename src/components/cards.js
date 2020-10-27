@@ -10,8 +10,10 @@ export default function (props) {
                 <div className="card-body">
                     <h5 className="card-title">{props.title}</h5>
                     <p className="card-text">{props.children}</p>
-                    <Link to={pageUrl}  type="button" className="btn btn-primary">Learn more!</Link>
-                    <Link to="" type="button" className="corazon btn btn-outline-warning align-self-end">Corazón</Link>
+                    <div className="cardFooter d-flex justify-content-between m-right: 3">
+                        <Link to={pageUrl}  type="button" className="btn btn-primary">Learn more!</Link>
+                        <Link to="" type="button" className="corazon btn btn-outline-warning align-self-end">♡</Link>
+                    </div>
                 </div>
             </div>
     )
