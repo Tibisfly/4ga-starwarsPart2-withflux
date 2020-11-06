@@ -36,7 +36,7 @@ export default function(props) {
             <div className="container-fluid d-flex cardScrollable">
                 {store.planets.map((planet, index)=>{
                     return (
-                    <Cards tipo="planets" title={planet.name} urlID={getID(planet.url)} key={index} cardImage="https://static.wikia.nocookie.net/esstarwars/images/4/4c/TFA_galaxy_map.png/revision/latest?cb=20200204204632">
+                    <Cards tipo="planets" title={planet.name} urlID={getID(planet.url)} key={index} cardImage="https://www.famefocus.com/wp-content/uploads/2017/05/conclusion-of-empire-1000x435.jpeg">
                         <p  key={index}>Population: {planet.population}</p>
                         <p  key={index}>Hair-color: {planet.terrain}</p>
                     </Cards>)

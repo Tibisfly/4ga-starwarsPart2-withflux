@@ -12,7 +12,7 @@ export default function (props) {
                     <p className="card-text">{props.children}</p>
                     <div className="cardFooter d-flex justify-content-between m-right: 3">
                         <Link to={pageUrl}  type="button" className="btn btn-primary">Learn more!</Link>
-                        <Link to="" type="button" className="corazon btn btn-outline-warning align-self-end">♡</Link>
+                        {/* <Link to="" type="button" className="corazon btn btn-outline-warning align-self-end">♡</Link> */}
                     </div>
                 </div>
             </div>
