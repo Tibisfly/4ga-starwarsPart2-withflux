@@ -3,7 +3,8 @@ export default function({ getStore, getActions, setStore }) {
         store: {
             loading: false,
             people: [],
-            planets: []
+            planets: [],
+            favorites:new Set([])
         },
         actions: {
             setLoading(status) {
@@ -40,6 +41,20 @@ export default function({ getStore, getActions, setStore }) {
                         setStore({planets:json.results})
                     })
                 }  
+            },
+            getFavorites(){
+                const store = getStore()
+                return [...store.favorites]
+                // los tres puntos convierten un set en un array
+            },
+            addFavorites(fav){
+                const store = getStore()
+                store.favorites.add(fav)
+                // no va con push porque no es un Array, sino un set (ver store)
+            },
+            deleteFavorites(fav_Name){
+                const store = getStore()
+                store.favorites.delete(fav_Name)
             }
         }
     }

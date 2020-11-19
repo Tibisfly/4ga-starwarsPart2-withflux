@@ -24,7 +24,7 @@ export default function(props) {
             <div className="container-fluid d-flex cardScrollable">
                 {store.people.map((person, key)=>{
                 return (
-                    <Cards tipo="character" title={person.name} urlID={getID(person.url)} key={key*1000} cardImage="https://www.famefocus.com/wp-content/uploads/2017/05/conclusion-of-empire-1000x435.jpeg">
+                    <Cards tipo="character" resource={person} title={person.name} urlID={getID(person.url)} key={key*1000} cardImage="https://www.famefocus.com/wp-content/uploads/2017/05/conclusion-of-empire-1000x435.jpeg">
                         <p>Gender: {person.gender}</p>
                         <p>Hair-color: {person.hair_color}</p>
                         <p>Eye-color: {person.eye_color}</p>
@@ -36,7 +36,7 @@ export default function(props) {
             <div className="container-fluid d-flex cardScrollable">
                 {store.planets.map((planet, index)=>{
                     return (
-                    <Cards tipo="planets" title={planet.name} urlID={getID(planet.url)} key={index} cardImage="https://www.famefocus.com/wp-content/uploads/2017/05/conclusion-of-empire-1000x435.jpeg">
+                    <Cards tipo="planets" resource={planet} title={planet.name} urlID={getID(planet.url)} key={index} cardImage="https://www.famefocus.com/wp-content/uploads/2017/05/conclusion-of-empire-1000x435.jpeg">
                         <p  >Population: {planet.population}</p>
                         <p  >Hair-color: {planet.terrain}</p>
                     </Cards>)

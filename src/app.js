@@ -13,7 +13,7 @@ import Navbar from "./components/navbar.js"
 import Home from "./pages/home.js"
 import About from "./pages/about.js"
 import Contact from "./pages/contact.js"
-import User from "./pages/user.js"
+
 import DetailEntity from "./components/detailEntity.js"
 import store from "./store";
 
@@ -38,11 +38,11 @@ export default injectContext(function(props) {
                     </Route>
 
                     <Route path="/character/:id">
-                        <DetailEntity />
+                        <DetailEntity tipo="people"/>
                     </Route>
 
                     <Route path="/planets/:id">
-                        <DetailEntity />
+                        <DetailEntity tipo="planets"/>
                     </Route>
                 </Switch>
             </div>
