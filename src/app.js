@@ -37,7 +37,7 @@ export default injectContext(function(props) {
                         <Contact />
                     </Route>
 
-                    <Route path="/character/index">
+                    <Route path="/character/:id">
                         <DetailEntity />
                     </Route>
 

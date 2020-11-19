@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function (props) {
     const pageUrl = "/" + props.tipo +"/"+ props.urlID
+    console.log(props.tipo)
 
     return (
             <div className="card d-flex mx-3 my-2">
