@@ -50,11 +50,13 @@ export default function({ getStore, getActions, setStore }) {
             addFavorites(fav){
                 const store = getStore()
                 store.favorites.add(fav)
-                // no va con push porque no es un Array, sino un set (ver store)
+                // no va con la función push de JS porque no es un Array, sino un set (ver store, estudiar esto)
+                setStore({favorites: store.favorites})
             },
             deleteFavorites(fav_Name){
                 const store = getStore()
                 store.favorites.delete(fav_Name)
+                setStore({favorites: store.favorites})
             }
         }
     }

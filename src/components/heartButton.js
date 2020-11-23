@@ -10,6 +10,6 @@ export default function(props) {
      }
      //añadir a favorite via props ( en cards que es dondse se renderiza <Favorites />)
     return (
-        <button  onClick= {handleClick} type="button" className="btn heart"><i className="corazon far fa-heart"></i></button>
+        <button onClick= {handleClick} type="button" className="btn heart"><i className="corazon far fa-heart">♥</i></button>
     )
 }

@@ -18,7 +18,7 @@ export default function (props) {
                    {props.children}
                     <div className="cardFooter d-flex justify-content-between m-right: 3">
                         <Link to={pageUrl}  type="button" className="btn btn-primary">Learn more!</Link>
-                        <HeartButton name={props.favorite} />
+                        <HeartButton name={props.title} />
                     </div>
                 </div>
             </div>
