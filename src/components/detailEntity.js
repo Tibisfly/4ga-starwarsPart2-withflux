@@ -11,11 +11,9 @@ export default function(props) {
 useEffect(()=>{
     if (props.tipo == "people"){
         setDetail(store.people[params.id])
-    }else{
-        if(props.tipo == "planets"){
+    }else if(props.tipo == "planets"){
             setDetail(store.planets[params.id])
         }
-    }
 }, [])
 
     return (
@@ -35,7 +33,18 @@ useEffect(()=>{
             </div> 
         </div> 
             <div class="divider bg-warning"></div>
-            <div className="row d-flex ml-5">
+
+            {props.tipo == "people" ? 
+                <div className="row d-flex ml-5">
+                <div className= "col-2 text-warning">{detail.name}</div>
+                <div className= "col-2 text-warning">{detail.hair_color}</div>
+                <div className= "col-2 text-warning">Name </div>
+                <div className= "col-2 text-warning">Name </div>
+                <div className= "col-2 text-warning">Name </div>
+                <div className= "col-2 text-warning">Name</div>
+            </div> 
+                :
+                <div className="row d-flex ml-5">
                 <div className= "col-2 text-warning">Name</div>
                 <div className= "col-2 text-warning">Name</div>
                 <div className= "col-2 text-warning">Name </div>
@@ -43,8 +52,8 @@ useEffect(()=>{
                 <div className= "col-2 text-warning">Name </div>
                 <div className= "col-2 text-warning">Name</div>
             </div>
-            <p>{detail.residents}</p>
-   
+            }
+            {/* // aqui tengo que hacer dos componentes  */}
         </>
 
     )
