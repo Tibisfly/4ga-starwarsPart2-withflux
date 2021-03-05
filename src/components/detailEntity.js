@@ -19,8 +19,8 @@ useEffect(()=>{
     return (
      <>
         <div className="detail card m-5" >
-            <div className="row">
-                <div className="col-md-4">
+            <div className="row justify-content-center">
+                <div className="col-lg-8 ">
                     <img src="https://i.pinimg.com/originals/1d/cf/f7/1dcff7f4e1613d9e071a99ef8725402a.jpg" className="card-img" alt="..."/>
                 </div>
                 <div className="col-md-8">
